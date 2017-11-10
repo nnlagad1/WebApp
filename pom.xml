@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ibm.isl</groupId>
+  <artifactId>apptrax</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  <name>apptrax</name>
+  <url>http://maven.apache.org</url>
+  <description>
+  Hi This is my first maven project.
+  </description>
+  <developers>
+  <developer>
+  <id>1234</id>
+  <name>Nilesh</name>
+  <email>nnn@c.com</email>
+  </developer>
+  </developers>
+  <contributors>
+  <contributor>
+  
+  <name>Pawan Gupta</name>
+  <email>hsh@c.com</email>
+  
+  </contributor>
+  </contributors>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.ibm.isl</groupId>
+      <artifactId>wcs</artifactId>
+      <version>1.0</version>
+      <scope>test</scope>
+    </dependency>
+    
+  </dependencies>
+  <build>
+    <finalName>com.ibm.isl</finalName>
+  </build>
+  <reporting>
+      <plugins>
+      <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>cobertura-maven-plugin</artifactId>
+      <version>2.7</version>
+      <configuration>
+      <format>html</format>
+       </configuration>
+      </plugin>
+      <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-report-plugin</artifactId>
+      </plugin>
+      <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-pmd-plugin</artifactId>
+      </plugin>
+      <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-checkstyle-plugin</artifactId>
+      </plugin>
+      
+      <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+      
+      
+      </plugins>
+  </reporting>
+</project>
